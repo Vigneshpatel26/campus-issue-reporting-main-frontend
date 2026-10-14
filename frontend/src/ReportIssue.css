@@ -1,0 +1,258 @@
+
+.report-page {
+  min-height: 100vh;
+  background: #f5f8f5;
+  color: #19352f;
+}
+
+.report-header {
+  min-height: 76px;
+  padding: 16px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-bottom: 1px solid #e4ece6;
+}
+
+.back-button {
+  padding: 10px 14px;
+  background: transparent;
+  border: 1px solid #d7e5da;
+  border-radius: 8px;
+  color: #176b50;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.back-button:hover,
+.cancel-button:hover {
+  background: #edf5ef;
+}
+
+.report-brand {
+  font-size: 23px;
+  font-weight: 800;
+  color: #176b50;
+}
+
+.report-container {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 48px 24px 70px;
+}
+
+.report-heading {
+  margin-bottom: 30px;
+}
+
+.report-eyebrow {
+  color: #287c5b;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.report-heading h1 {
+  margin: 14px 0;
+  font-size: clamp(30px, 5vw, 42px);
+  line-height: 1.2;
+  color: #173e32;
+}
+
+.report-heading > p:last-child {
+  max-width: 600px;
+  color: #687a70;
+  line-height: 1.8;
+}
+
+.report-form {
+  padding: 32px;
+  background: #fff;
+  border: 1px solid #e2ebe4;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(28, 75, 49, 0.05);
+}
+
+.form-section-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #edf1ed;
+}
+
+.section-number {
+  display: grid;
+  place-items: center;
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #eaf5ed;
+  color: #176b50;
+  font-weight: 800;
+}
+
+.form-section-title h2 {
+  font-size: 21px;
+  margin-bottom: 5px;
+}
+
+.form-section-title p {
+  font-size: 13px;
+  color: #718078;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 23px;
+}
+
+.form-field label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #29483a;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d8e2da;
+  border-radius: 9px;
+  background: #fff;
+  color: #19352f;
+  font: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: #287c5b;
+  box-shadow: 0 0 0 3px rgba(40, 124, 91, 0.1);
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.form-field input[type='file'] {
+  padding: 11px;
+  background: #f9fbf9;
+}
+
+.form-field small {
+  color: #758279;
+  font-size: 12px;
+}
+
+.selected-file {
+  color: #176b50;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.form-note {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  margin: 8px 0 26px;
+  border-radius: 10px;
+  background: #f0f7f1;
+}
+
+.form-note p {
+  color: #506c5a;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-top: 20px;
+  border-top: 1px solid #edf1ed;
+}
+
+.cancel-button,
+.submit-button {
+  padding: 13px 19px;
+  border-radius: 9px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cancel-button {
+  border: 1px solid #d8e2da;
+  background: #fff;
+  color: #385848;
+}
+
+.submit-button {
+  border: 1px solid #176b50;
+  background: #176b50;
+  color: #fff;
+}
+
+.submit-button:hover {
+  background: #10543d;
+}
+
+.success-message {
+  margin-bottom: 22px;
+  padding: 18px;
+  border: 1px solid #b8ddc2;
+  border-radius: 12px;
+  background: #edf8ef;
+  color: #245d39;
+}
+
+.success-message p {
+  margin-top: 7px;
+  line-height: 1.6;
+}
+
+.success-message button {
+  margin-top: 12px;
+  padding: 7px 12px;
+  border: 1px solid #b8ddc2;
+  border-radius: 7px;
+  background: #fff;
+  color: #245d39;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .report-header {
+    padding: 14px 5%;
+  }
+
+  .report-brand {
+    font-size: 19px;
+  }
+
+  .report-container {
+    padding: 32px 16px 45px;
+  }
+
+  .report-form {
+    padding: 22px 17px;
+  }
+
+  .form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .form-actions button {
+    width: 100%;
+  }
+}
